@@ -20,12 +20,135 @@
           <button class="menu-btn">
             <i class="icon icon-bars icon-large" aria-label="Menu"></i>
           </button>
-          <nav class="mobile-nav">
-            <ul class="mobile-nav-menu">
-              <li class="mobile-nav-item"><a href="#">Item 1</a></li>
-              <li class="mobile-nav-item"><a href="#">Item 2</a></li>
-              <li class="mobile-nav-item"><a href="#">Item 3</a></li>
-            </ul>
+          <nav class="mobile-nav text-center">
+            <div class="overlay"></div>
+            <button class="mobile-nav-close" aria-label="Close menu">
+              &times;
+            </button>
+
+            <div class="mobile-nav-container">
+              <!-- Logo đầu menu -->
+              <div class="mobile-nav-logo">
+                <a href="/">
+                  <img
+                    src="./assets/images/logo-main.png"
+                    alt="Logo"
+                    class="mobile-logo w-100"
+                    style="max-width: 156px"
+                  />
+                </a>
+              </div>
+
+              <!-- Menu Items -->
+              <ul class="mobile-nav-menu">
+                <li class="mobile-nav-item">
+                  <a href="/about-us.html">About us</a>
+                </li>
+
+                <li class="mobile-nav-item">
+                  <a href="/rooms.html">Rooms</a>
+                  <ul class="mobile-submenu slide-toggle">
+                    <li>
+                      <a href="/rooms-detail.html">Superior without window</a>
+                    </li>
+                    <li>
+                      <a href="/rooms-detail.html">Deluxe Internal Window</a>
+                    </li>
+                    <li><a href="/rooms-detail.html">Premier City View</a></li>
+                    <li>
+                      <a href="/rooms-detail.html">Deluxe Single City View</a>
+                    </li>
+                  </ul>
+                  <span class="toggle-submenu"></span>
+                </li>
+
+                <li class="mobile-nav-item">
+                  <a href="/dining.html">Dining</a>
+                  <ul class="mobile-submenu slide-toggle">
+                    <li>
+                      <a href="/dining-detail.html"
+                        >May De Ville Lakeside Restaurant</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/dining-detail.html"
+                        >May De Ville Lakeside Rooftop Bar</a
+                      >
+                    </li>
+                  </ul>
+                  <span class="toggle-submenu"></span>
+                </li>
+
+                <li class="mobile-nav-item">
+                  <a href="/spa-wellness.html">Spa & Wellness</a>
+                  <ul class="mobile-submenu slide-toggle">
+                    <li><a href="/dining-detail.html">May Spa</a></li>
+                    <li><a href="/dining-detail.html">Swiming Pool</a></li>
+                    <li>
+                      <a href="/dining-detail.html">Heath Club &amp; GYM</a>
+                    </li>
+                  </ul>
+                  <span class="toggle-submenu"></span>
+                </li>
+
+                <li class="mobile-nav-item">
+                  <a href="/offers.html">Offers</a>
+                </li>
+
+                <li class="mobile-nav-item">
+                  <a href="/gallery.html">Gallery</a>
+                </li>
+
+                <li class="mobile-nav-item">
+                  <a href="/tour-services.html">Tour services</a>
+                  <ul class="mobile-submenu slide-toggle">
+                    <li><a href="/tour-services-list.html">Day Tours</a></li>
+                    <li><a href="/tour-services-list.html">Sapa Tours</a></li>
+                    <li>
+                      <a href="/tour-services-list.html">Mai Chau Village</a>
+                    </li>
+                    <li>
+                      <a href="/tour-services-list.html">Ninh Binh Excursion</a>
+                    </li>
+                    <li>
+                      <a href="/tour-services-list.html"
+                        >Transportation &amp; Visa application</a
+                      >
+                    </li>
+                  </ul>
+                  <span class="toggle-submenu"></span>
+                </li>
+
+                <li class="mobile-nav-item">
+                  <a href="#">Blog</a>
+                  <ul class="mobile-submenu slide-toggle">
+                    <li><a href="/blog-news.html">News</a></li>
+                    <li><a href="/blog-events.html">Events</a></li>
+                  </ul>
+                  <span class="toggle-submenu"></span>
+                </li>
+              </ul>
+
+              <!-- Footer Social Links -->
+              <div class="mobile-nav-footer">
+                <div
+                  class="social-icons justify-content-center justify-content-md-start"
+                >
+                  <a href="#" class="social-icon">
+                    <i class="icon icon-facebook footer-icon icon-small"></i>
+                  </a>
+                  <a href="#" class="social-icon">
+                    <i class="icon icon-youtube footer-icon icon-small"></i>
+                  </a>
+                  <a href="#" class="social-icon">
+                    <i class="icon icon-instagram footer-icon icon-small"></i>
+                  </a>
+                  <a href="#" class="social-icon">
+                    <i class="icon icon-website footer-icon icon-small"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
           </nav>
         </div>
 
@@ -46,57 +169,122 @@
           <nav class="navbar show-desktop">
             <ul class="navbar-menu">
               <li class="navbar-item">
-                <a href="#"
-                  >About us
+                <a href="/about-us.html">About us </a>
+              </li>
+              <li class="navbar-item">
+                <a href="/rooms.html"
+                  >Rooms
                   <i class="icon icon-chevron-down icon-small mt-1_5"></i>
                 </a>
                 <ul class="navbar-submenu slide-up">
                   <li class="navbar-subitem">
-                    <a href="#">Superior without window</a>
+                    <a href="/rooms-detail.html">Superior without window</a>
                   </li>
                   <li class="navbar-subitem">
-                    <a href="#">Superior without test</a>
+                    <a href="/rooms-detail.html">Deluxe Internal Window</a>
                   </li>
-                  <li class="navbar-subitem"><a href="#">Test</a></li>
+                  <li class="navbar-subitem">
+                    <a href="/rooms-detail.html">Premier City View</a>
+                  </li>
+                  <li class="navbar-subitem">
+                    <a href="/rooms-detail.html">Deluxe Single City View</a>
+                  </li>
                 </ul>
               </li>
-              <li class="navbar-item"><a href="#">Rooms</a></li>
-              <li class="navbar-item"><a href="#">Dining</a></li>
-              <li class="navbar-item"><a href="#">Spa & Wellness</a></li>
-              <li class="navbar-item"><a href="#">Offers</a></li>
-              <li class="navbar-item"><a href="#">Gallery</a></li>
               <li class="navbar-item">
-                <a href="#"
+                <a href="/dining.html"
+                  >Dining
+                  <i class="icon icon-chevron-down icon-small mt-1_5"></i>
+                </a>
+                <ul class="navbar-submenu slide-up">
+                  <li class="navbar-subitem">
+                    <a href="/dining-detail.html"
+                      >May De Ville Lakeside Restaurant</a
+                    >
+                  </li>
+                  <li class="navbar-subitem">
+                    <a href="/dining-detail.html"
+                      >May De Ville Lakeside Rooftop Bar</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="navbar-item">
+                <a href="/spa-wellness.html"
+                  >Spa & Wellness
+                  <i class="icon icon-chevron-down icon-small mt-1_5"></i>
+                </a>
+                <ul class="navbar-submenu slide-up">
+                  <li class="navbar-subitem">
+                    <a href="/dining-detail.html">May Spa</a>
+                  </li>
+                  <li class="navbar-subitem">
+                    <a href="/dining-detail.html">Swiming Pool</a>
+                  </li>
+                  <li class="navbar-subitem">
+                    <a href="/dining-detail.html">Heath Club & GYM</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="navbar-item"><a href="/offers.html">Offers</a></li>
+              <li class="navbar-item"><a href="/gallery.html">Gallery</a></li>
+              <li class="navbar-item">
+                <a href="/tour-services.html"
                   >Tour services
                   <i class="icon icon-chevron-down icon-small mt-1_5"></i>
                 </a>
                 <ul class="navbar-submenu">
                   <li class="navbar-subitem">
-                    <a href="#">Superior without window</a>
+                    <a href="/tour-services-list.html">Day Tours</a>
                   </li>
                   <li class="navbar-subitem">
-                    <a href="#">Superior without test</a>
+                    <a href="/tour-services-list.html">Sapa Tours</a>
                   </li>
-                  <li class="navbar-subitem"><a href="#">Test</a></li>
+                  <li class="navbar-subitem">
+                    <a href="/tour-services-list.html">Mai Chau Village</a>
+                  </li>
+                  <li class="navbar-subitem">
+                    <a href="/tour-services-list.html">Ninh Binh Excursion</a>
+                  </li>
+                  <li class="navbar-subitem">
+                    <a href="/tour-services-list.html"
+                      >Transportation & Visa appplication</a
+                    >
+                  </li>
                 </ul>
               </li>
-              <li class="navbar-item"><a href="#">Blog</a></li>
+              <li class="navbar-item">
+                <a href="#"
+                  >Blog <i class="icon icon-chevron-down icon-small mt-1_5"></i>
+                </a>
+                <ul class="navbar-submenu">
+                  <li class="navbar-subitem">
+                    <a href="/blog-news.html">News</a>
+                  </li>
+                  <li class="navbar-subitem">
+                    <a href="/blog-events.html">Events</a>
+                  </li>
+                </ul>
+              </li>
             </ul>
           </nav>
         </div>
         <div class="header-actions">
-          <a href="" class="btn-book show-desktop">Book now</a>
+          <a href="/book-now.html" class="btn-book show-desktop">Book now</a>
           <div class="gift-action">
             <button class="btn-gift show-mobile">
               <i class="icon icon-gift icon-small"></i>
             </button>
-            <div class="promotion-info active">
+            <div class="promotion-info slide-toggle" id="promotionInfo">
               <h4 class="promotion-title">Best Price Guarantee</h4>
-              <p class="promotion-description">
-                Book direct online using our Promotion Code: "MDV2025" up to 30%
-                off all rooms & suites - Guaranteed Best Price than any other
-                sources.
-              </p>
+              <div class="promotion-description my-4">
+                <p>
+                  Book direct online using our Promotion Code: "MDV2025" up to
+                  30% off all rooms & suites - Guaranteed Best Price than any
+                  other sources.
+                </p>
+              </div>
+
               <button class="btn-book">Book now</button>
 
               <button class="btn-close" title="Close"></button>
@@ -128,13 +316,15 @@
             <div class="blog-image col-12 col-md-6 p-0">
               <img
                 src="./assets/images/tours/3.jpg"
-                alt="History"
+                alt="News"
                 class="img-fluid"
               />
             </div>
             <div class="blog-content col-12 col-md-6 mt-2 mt-md-0 px-4">
-              <h5 class="blog-title">History</h5>
-              <a href="#" class="btn btn-primary mt-2 blog-btn">Learn more</a>
+              <h5 class="blog-title">News</h5>
+              <a href="/blog-news.html" class="btn btn-primary mt-2 blog-btn"
+                >Learn more</a
+              >
             </div>
           </div>
 
@@ -143,13 +333,15 @@
             <div class="blog-image col-12 col-md-6 p-0">
               <img
                 src="./assets/images/tours/3.jpg"
-                alt="Culture"
+                alt="Events"
                 class="img-fluid"
               />
             </div>
             <div class="blog-content col-12 col-md-6 mt-2 mt-md-0 px-4">
-              <h5 class="blog-title">Culture</h5>
-              <a href="#" class="btn btn-primary mt-2 blog-btn">Learn more</a>
+              <h5 class="blog-title">Events</h5>
+              <a href="/blog-events.html" class="btn btn-primary mt-2 blog-btn"
+                >Learn more</a
+              >
             </div>
           </div>
 
@@ -164,7 +356,9 @@
             </div>
             <div class="blog-content col-12 col-md-6 mt-2 mt-md-0 px-4">
               <h5 class="blog-title">Adventure</h5>
-              <a href="#" class="btn btn-primary mt-2 blog-btn">Learn more</a>
+              <a href="/blog-events.html" class="btn btn-primary mt-2 blog-btn"
+                >Learn more</a
+              >
             </div>
           </div>
         </div>

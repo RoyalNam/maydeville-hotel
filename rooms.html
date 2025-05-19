@@ -20,12 +20,135 @@
           <button class="menu-btn">
             <i class="icon icon-bars icon-large" aria-label="Menu"></i>
           </button>
-          <nav class="mobile-nav">
-            <ul class="mobile-nav-menu">
-              <li class="mobile-nav-item"><a href="#">Item 1</a></li>
-              <li class="mobile-nav-item"><a href="#">Item 2</a></li>
-              <li class="mobile-nav-item"><a href="#">Item 3</a></li>
-            </ul>
+          <nav class="mobile-nav text-center">
+            <div class="overlay"></div>
+            <button class="mobile-nav-close" aria-label="Close menu">
+              &times;
+            </button>
+
+            <div class="mobile-nav-container">
+              <!-- Logo đầu menu -->
+              <div class="mobile-nav-logo">
+                <a href="/">
+                  <img
+                    src="./assets/images/logo-main.png"
+                    alt="Logo"
+                    class="mobile-logo w-100"
+                    style="max-width: 156px"
+                  />
+                </a>
+              </div>
+
+              <!-- Menu Items -->
+              <ul class="mobile-nav-menu">
+                <li class="mobile-nav-item">
+                  <a href="/about-us.html">About us</a>
+                </li>
+
+                <li class="mobile-nav-item">
+                  <a href="/rooms.html">Rooms</a>
+                  <ul class="mobile-submenu slide-toggle">
+                    <li>
+                      <a href="/rooms-detail.html">Superior without window</a>
+                    </li>
+                    <li>
+                      <a href="/rooms-detail.html">Deluxe Internal Window</a>
+                    </li>
+                    <li><a href="/rooms-detail.html">Premier City View</a></li>
+                    <li>
+                      <a href="/rooms-detail.html">Deluxe Single City View</a>
+                    </li>
+                  </ul>
+                  <span class="toggle-submenu"></span>
+                </li>
+
+                <li class="mobile-nav-item">
+                  <a href="/dining.html">Dining</a>
+                  <ul class="mobile-submenu slide-toggle">
+                    <li>
+                      <a href="/dining-detail.html"
+                        >May De Ville Lakeside Restaurant</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/dining-detail.html"
+                        >May De Ville Lakeside Rooftop Bar</a
+                      >
+                    </li>
+                  </ul>
+                  <span class="toggle-submenu"></span>
+                </li>
+
+                <li class="mobile-nav-item">
+                  <a href="/spa-wellness.html">Spa & Wellness</a>
+                  <ul class="mobile-submenu slide-toggle">
+                    <li><a href="/dining-detail.html">May Spa</a></li>
+                    <li><a href="/dining-detail.html">Swiming Pool</a></li>
+                    <li>
+                      <a href="/dining-detail.html">Heath Club &amp; GYM</a>
+                    </li>
+                  </ul>
+                  <span class="toggle-submenu"></span>
+                </li>
+
+                <li class="mobile-nav-item">
+                  <a href="/offers.html">Offers</a>
+                </li>
+
+                <li class="mobile-nav-item">
+                  <a href="/gallery.html">Gallery</a>
+                </li>
+
+                <li class="mobile-nav-item">
+                  <a href="/tour-services.html">Tour services</a>
+                  <ul class="mobile-submenu slide-toggle">
+                    <li><a href="/tour-services-list.html">Day Tours</a></li>
+                    <li><a href="/tour-services-list.html">Sapa Tours</a></li>
+                    <li>
+                      <a href="/tour-services-list.html">Mai Chau Village</a>
+                    </li>
+                    <li>
+                      <a href="/tour-services-list.html">Ninh Binh Excursion</a>
+                    </li>
+                    <li>
+                      <a href="/tour-services-list.html"
+                        >Transportation &amp; Visa application</a
+                      >
+                    </li>
+                  </ul>
+                  <span class="toggle-submenu"></span>
+                </li>
+
+                <li class="mobile-nav-item">
+                  <a href="#">Blog</a>
+                  <ul class="mobile-submenu slide-toggle">
+                    <li><a href="/blog-news.html">News</a></li>
+                    <li><a href="/blog-events.html">Events</a></li>
+                  </ul>
+                  <span class="toggle-submenu"></span>
+                </li>
+              </ul>
+
+              <!-- Footer Social Links -->
+              <div class="mobile-nav-footer">
+                <div
+                  class="social-icons justify-content-center justify-content-md-start"
+                >
+                  <a href="#" class="social-icon">
+                    <i class="icon icon-facebook footer-icon icon-small"></i>
+                  </a>
+                  <a href="#" class="social-icon">
+                    <i class="icon icon-youtube footer-icon icon-small"></i>
+                  </a>
+                  <a href="#" class="social-icon">
+                    <i class="icon icon-instagram footer-icon icon-small"></i>
+                  </a>
+                  <a href="#" class="social-icon">
+                    <i class="icon icon-website footer-icon icon-small"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
           </nav>
         </div>
 
@@ -46,57 +169,122 @@
           <nav class="navbar show-desktop">
             <ul class="navbar-menu">
               <li class="navbar-item">
-                <a href="#"
-                  >About us
+                <a href="/about-us.html">About us </a>
+              </li>
+              <li class="navbar-item">
+                <a href="/rooms.html"
+                  >Rooms
                   <i class="icon icon-chevron-down icon-small mt-1_5"></i>
                 </a>
                 <ul class="navbar-submenu slide-up">
                   <li class="navbar-subitem">
-                    <a href="#">Superior without window</a>
+                    <a href="/rooms-detail.html">Superior without window</a>
                   </li>
                   <li class="navbar-subitem">
-                    <a href="#">Superior without test</a>
+                    <a href="/rooms-detail.html">Deluxe Internal Window</a>
                   </li>
-                  <li class="navbar-subitem"><a href="#">Test</a></li>
+                  <li class="navbar-subitem">
+                    <a href="/rooms-detail.html">Premier City View</a>
+                  </li>
+                  <li class="navbar-subitem">
+                    <a href="/rooms-detail.html">Deluxe Single City View</a>
+                  </li>
                 </ul>
               </li>
-              <li class="navbar-item"><a href="#">Rooms</a></li>
-              <li class="navbar-item"><a href="#">Dining</a></li>
-              <li class="navbar-item"><a href="#">Spa & Wellness</a></li>
-              <li class="navbar-item"><a href="#">Offers</a></li>
-              <li class="navbar-item"><a href="#">Gallery</a></li>
               <li class="navbar-item">
-                <a href="#"
+                <a href="/dining.html"
+                  >Dining
+                  <i class="icon icon-chevron-down icon-small mt-1_5"></i>
+                </a>
+                <ul class="navbar-submenu slide-up">
+                  <li class="navbar-subitem">
+                    <a href="/dining-detail.html"
+                      >May De Ville Lakeside Restaurant</a
+                    >
+                  </li>
+                  <li class="navbar-subitem">
+                    <a href="/dining-detail.html"
+                      >May De Ville Lakeside Rooftop Bar</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="navbar-item">
+                <a href="/spa-wellness.html"
+                  >Spa & Wellness
+                  <i class="icon icon-chevron-down icon-small mt-1_5"></i>
+                </a>
+                <ul class="navbar-submenu slide-up">
+                  <li class="navbar-subitem">
+                    <a href="/dining-detail.html">May Spa</a>
+                  </li>
+                  <li class="navbar-subitem">
+                    <a href="/dining-detail.html">Swiming Pool</a>
+                  </li>
+                  <li class="navbar-subitem">
+                    <a href="/dining-detail.html">Heath Club & GYM</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="navbar-item"><a href="/offers.html">Offers</a></li>
+              <li class="navbar-item"><a href="/gallery.html">Gallery</a></li>
+              <li class="navbar-item">
+                <a href="/tour-services.html"
                   >Tour services
                   <i class="icon icon-chevron-down icon-small mt-1_5"></i>
                 </a>
                 <ul class="navbar-submenu">
                   <li class="navbar-subitem">
-                    <a href="#">Superior without window</a>
+                    <a href="/tour-services-list.html">Day Tours</a>
                   </li>
                   <li class="navbar-subitem">
-                    <a href="#">Superior without test</a>
+                    <a href="/tour-services-list.html">Sapa Tours</a>
                   </li>
-                  <li class="navbar-subitem"><a href="#">Test</a></li>
+                  <li class="navbar-subitem">
+                    <a href="/tour-services-list.html">Mai Chau Village</a>
+                  </li>
+                  <li class="navbar-subitem">
+                    <a href="/tour-services-list.html">Ninh Binh Excursion</a>
+                  </li>
+                  <li class="navbar-subitem">
+                    <a href="/tour-services-list.html"
+                      >Transportation & Visa appplication</a
+                    >
+                  </li>
                 </ul>
               </li>
-              <li class="navbar-item"><a href="#">Blog</a></li>
+              <li class="navbar-item">
+                <a href="#"
+                  >Blog <i class="icon icon-chevron-down icon-small mt-1_5"></i>
+                </a>
+                <ul class="navbar-submenu">
+                  <li class="navbar-subitem">
+                    <a href="/blog-news.html">News</a>
+                  </li>
+                  <li class="navbar-subitem">
+                    <a href="/blog-events.html">Events</a>
+                  </li>
+                </ul>
+              </li>
             </ul>
           </nav>
         </div>
         <div class="header-actions">
-          <a href="" class="btn-book show-desktop">Book now</a>
+          <a href="/book-now.html" class="btn-book show-desktop">Book now</a>
           <div class="gift-action">
             <button class="btn-gift show-mobile">
               <i class="icon icon-gift icon-small"></i>
             </button>
-            <div class="promotion-info active">
+            <div class="promotion-info slide-toggle" id="promotionInfo">
               <h4 class="promotion-title">Best Price Guarantee</h4>
-              <p class="promotion-description">
-                Book direct online using our Promotion Code: "MDV2025" up to 30%
-                off all rooms & suites - Guaranteed Best Price than any other
-                sources.
-              </p>
+              <div class="promotion-description my-4">
+                <p>
+                  Book direct online using our Promotion Code: "MDV2025" up to
+                  30% off all rooms & suites - Guaranteed Best Price than any
+                  other sources.
+                </p>
+              </div>
+
               <button class="btn-book">Book now</button>
 
               <button class="btn-close" title="Close"></button>
@@ -127,7 +315,10 @@
             <!-- Room Item -->
             <div class="col-md-6 mb-4">
               <div class="card bg-light">
-                <a href="#" class="hover-scale aspect-ratio-responsive">
+                <a
+                  href="/rooms-detail.html"
+                  class="hover-scale aspect-ratio-responsive"
+                >
                   <img
                     src="./assets/images/banner/banner-home2.jpg"
                     class="card-img-top img-fluid"
@@ -135,7 +326,9 @@
                   />
                 </a>
                 <div class="card-body">
-                  <a href="" class="card-title">Superior without window</a>
+                  <a href="/rooms-detail.html" class="card-title"
+                    >Superior without window</a
+                  >
                   <p class="card-text">
                     A superior room without a window is typically a
                     well-appointed and spacious room that lacks a view.
@@ -169,8 +362,10 @@
                   </ul>
 
                   <div class="d-flex gap-2 mt-3">
-                    <a href="#" class="btn btn-primary">Book now</a>
-                    <a href="#" class="btn btn-outline-dark"
+                    <a href="/book-now.html" class="btn btn-primary"
+                      >Book now</a
+                    >
+                    <a href="/rooms-detail.html" class="btn btn-outline-dark"
                       >View details
                       <i class="icon icon-arrow-right-long icon-small"></i>
                     </a>
@@ -181,7 +376,10 @@
 
             <div class="col-md-6 mb-4">
               <div class="card bg-light">
-                <a href="#" class="hover-scale aspect-ratio-responsive">
+                <a
+                  href="/rooms-detail.html"
+                  class="hover-scale aspect-ratio-responsive"
+                >
                   <img
                     src="./assets/images/banner/banner-home2.jpg"
                     class="card-img-top img-fluid"
@@ -189,7 +387,9 @@
                   />
                 </a>
                 <div class="card-body">
-                  <a href="" class="card-title">Superior without window</a>
+                  <a href="/rooms-detail.html" class="card-title"
+                    >Superior without window</a
+                  >
                   <p class="card-text">
                     A superior room without a window is typically a
                     well-appointed and spacious room that lacks a view.
@@ -223,8 +423,10 @@
                   </ul>
 
                   <div class="d-flex gap-2 mt-3">
-                    <a href="#" class="btn btn-primary">Book now</a>
-                    <a href="#" class="btn btn-outline-dark"
+                    <a href="/book-now.html" class="btn btn-primary"
+                      >Book now</a
+                    >
+                    <a href="/rooms-detail.html" class="btn btn-outline-dark"
                       >View details
                       <i class="icon icon-arrow-right-long icon-small"></i>
                     </a>
@@ -234,7 +436,10 @@
             </div>
             <div class="col-md-6 mb-4">
               <div class="card bg-light">
-                <a href="#" class="hover-scale aspect-ratio-responsive">
+                <a
+                  href="/rooms-detail.html"
+                  class="hover-scale aspect-ratio-responsive"
+                >
                   <img
                     src="./assets/images/banner/banner-home2.jpg"
                     class="card-img-top img-fluid"
@@ -242,7 +447,9 @@
                   />
                 </a>
                 <div class="card-body">
-                  <a href="" class="card-title">Superior without window</a>
+                  <a href="/rooms-detail.html" class="card-title"
+                    >Superior without window</a
+                  >
                   <p class="card-text">
                     A superior room without a window is typically a
                     well-appointed and spacious room that lacks a view.
@@ -276,8 +483,10 @@
                   </ul>
 
                   <div class="d-flex gap-2 mt-3">
-                    <a href="#" class="btn btn-primary">Book now</a>
-                    <a href="#" class="btn btn-outline-dark"
+                    <a href="/book-now.html" class="btn btn-primary"
+                      >Book now</a
+                    >
+                    <a href="/rooms-detail.html" class="btn btn-outline-dark"
                       >View details
                       <i class="icon icon-arrow-right-long icon-small"></i>
                     </a>
@@ -369,11 +578,13 @@
               About us
               <i class="icon icon-chevron-down footer-icon icon-small"></i>
             </h5>
-            <ul class="list-unstyled footer-menu">
-              <li><a href="/about/history" class="footer-link">History</a></li>
-              <li><a href="/about/vision" class="footer-link">Vision</a></li>
-              <li><a href="/about/mission" class="footer-link">Mission</a></li>
-              <li><a href="/contact" class="footer-link">Contact us</a></li>
+            <ul class="list-unstyled footer-menu slide-toggle">
+              <li><a href="/about-us.html" class="footer-link">History</a></li>
+              <li><a href="/about-us.html" class="footer-link">Vision</a></li>
+              <li><a href="/about-us.html" class="footer-link">Mission</a></li>
+              <li>
+                <a href="/contact-us.html" class="footer-link">Contact us</a>
+              </li>
             </ul>
           </div>
 
@@ -382,14 +593,14 @@
               Dining
               <i class="icon icon-chevron-down footer-icon icon-small"></i>
             </h5>
-            <ul class="list-unstyled footer-menu">
+            <ul class="list-unstyled footer-menu slide-toggle">
               <li>
-                <a href="/dining/restaurant" class="footer-link"
+                <a href="/dining-detail.html" class="footer-link"
                   >May De Ville Lakeside Restaurant</a
                 >
               </li>
               <li>
-                <a href="/dining/rooftop-bar" class="footer-link"
+                <a href="/dining-detail.html" class="footer-link"
                   >May De Ville Lakeside Rooftop Bar</a
                 >
               </li>
@@ -401,11 +612,17 @@
               Spa & Wellness
               <i class="icon icon-chevron-down footer-icon icon-small"></i>
             </h5>
-            <ul class="list-unstyled footer-menu">
-              <li><a href="/spa" class="footer-link">May Spa</a></li>
-              <li><a href="/spa/pool" class="footer-link">Swimming Pool</a></li>
+            <ul class="list-unstyled footer-menu slide-toggle">
               <li>
-                <a href="/spa/health-club" class="footer-link"
+                <a href="/dining-detail.html" class="footer-link">May Spa</a>
+              </li>
+              <li>
+                <a href="/dining-detail.html" class="footer-link"
+                  >Swimming Pool</a
+                >
+              </li>
+              <li>
+                <a href="/dining-detail.html" class="footer-link"
                   >Health Club & GYM</a
                 >
               </li>
@@ -417,11 +634,11 @@
               Explore
               <i class="icon icon-chevron-down footer-icon icon-small"></i>
             </h5>
-            <ul class="list-unstyled footer-menu">
+            <ul class="list-unstyled footer-menu slide-toggle">
               <li>
-                <a href="/explore/gallery" class="footer-link">Gallery</a>
+                <a href="/gallery.html" class="footer-link">Gallery</a>
               </li>
-              <li><a href="/explore/blog" class="footer-link">Blog</a></li>
+              <li><a href="/blog.html" class="footer-link">Blog</a></li>
             </ul>
           </div>
 
@@ -430,7 +647,7 @@
               Support
               <i class="icon icon-chevron-down footer-icon icon-small"></i>
             </h5>
-            <ul class="list-unstyled footer-menu">
+            <ul class="list-unstyled footer-menu slide-toggle">
               <li><a href="/faq" class="footer-link">FAQ</a></li>
               <li><a href="/terms" class="footer-link">Terms</a></li>
             </ul>
