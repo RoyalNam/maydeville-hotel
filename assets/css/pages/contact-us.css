@@ -1,0 +1,50 @@
+.contact-form {
+  max-width: 700px;
+  margin: 0 auto;
+  font-family: "Georgia", serif;
+}
+
+.form-row {
+  margin-bottom: 24px;
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  color: #333;
+  font-family: "Georgia", serif;
+  background: white;
+  width: 100%;
+  transition: border-color 0.2s ease;
+}
+
+.form-row input:focus,
+.form-row textarea:focus,
+.form-row select:focus {
+  border-color: #000;
+}
+
+.form-row textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.form-row button {
+  padding: 12px 24px;
+  background-color: #2d2723;
+  color: white;
+  border: none;
+  font-size: 18px;
+  font-family: "Georgia", serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.form-row button:hover {
+  background-color: #1f1b19;
+}

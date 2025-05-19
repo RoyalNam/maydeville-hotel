@@ -1,0 +1,71 @@
+.card {
+}
+
+.card .card-text {
+  font-weight: 300;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 24px;
+}
+.card-body .card-title {
+  color: currentColor;
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.card-body ul .icon {
+  color: rgba(154, 72, 55, 1);
+}
+.room-info-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+.border-t {
+  border-top: 1px solid var(--color-primary);
+}
+
+.room-gallery-swiper .swiper-slide {
+  aspect-ratio: 4/3;
+}
+.room-gallery-swiper .swiper-slide img {
+  height: 100%;
+  object-fit: cover;
+}
+.room-facilities-list li {
+  margin-left: 18px;
+  list-style: disc;
+}
+.room-gallery-swiper {
+  position: relative;
+}
+
+.room-gallery-swiper .button-prev,
+.room-gallery-swiper .button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+  background-color: var(--color-primary);
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 4px;
+}
+.room-gallery-swiper .button-next {
+  right: 0;
+}
+.room-gallery-swiper .button-prev {
+  left: 0;
+}
+
+@media (max-width: 768px) {
+  .room-gallery-swiper .swiper-slide {
+    aspect-ratio: 16/9;
+  }
+}

@@ -1,0 +1,74 @@
+.book-sec {
+  background-color: #fbf9ed;
+}
+.book-container {
+  padding: 32px;
+  background-color: #fbf9ed;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.book-container .title {
+  /* font-family: cursive; */
+  font-size: 2.75rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: normal;
+  color: var(--color-primary);
+}
+.form-group {
+  margin-bottom: 12px;
+}
+.form-group label {
+  font-size: 0.8rem;
+  margin-bottom: 8px;
+}
+.form-group * {
+  font-size: 0.8rem;
+}
+.form-group input,
+.form-group table,
+.form-group textarea,
+.form-group select {
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+.form-group .table {
+  min-width: 500px;
+  overflow-y: auto;
+}
+
+.form-group .table img {
+  width: 100%;
+  max-width: 280px;
+  object-fit: cover;
+  aspect-ratio: 4/3;
+}
+.form-group .table tbody {
+  border-top: none;
+}
+.form-group .table th {
+  font-weight: normal;
+}
+.form-group .form-control:focus {
+  box-shadow: 0 0 0 0.1rem rgba(13, 110, 253, 0.25);
+}
+
+.form-group .btn-primary {
+  padding: 3px 3px 3px 40px;
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.form-group .btn-primary span {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+}
+.form-group select.form-control {
+  appearance: auto;
+}

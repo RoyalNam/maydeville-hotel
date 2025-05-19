@@ -1,0 +1,354 @@
+/* Banner */
+.swiper-banner {
+  min-height: 512px;
+}
+.swiper-banner .banner-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.swiper-banner .swiper-button-prev,
+.swiper-banner .swiper-button-next {
+  color: #fff;
+}
+.swiper-banner .swiper-button-prev {
+  margin-left: var(--spacing-lg);
+}
+.swiper-banner .swiper-button-next {
+  margin-right: var(--spacing-lg);
+}
+
+/* .swiper-banner .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+} */
+
+/* Welcome  */
+.essential-img {
+  height: 70px;
+  width: auto;
+}
+
+/* Offer */
+.swiper-offers {
+  user-select: none;
+  position: relative;
+}
+.offer-slide {
+  background: #fff;
+  transition: box-shadow 0.3s ease;
+}
+
+.offer-slide:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+.swiper-offers .button-prev,
+.swiper-offers .button-next {
+  color: var(--color-background);
+  background-color: var(--color-primary);
+  position: absolute;
+  top: 50%;
+  transform: translateY(50%);
+  z-index: 1;
+  border: none;
+  outline: none;
+  padding: 8px;
+}
+.swiper-offers .button-prev:hover,
+.swiper-offers .button-next:hover {
+  color: var(--color-text);
+}
+.swiper-offers .button-prev {
+  left: 0;
+}
+.swiper-offers .button-next {
+  right: 0;
+}
+
+.offer-link {
+  color: currentColor;
+  text-decoration: none;
+}
+.offer-link:hover {
+  color: currentColor;
+}
+.offer-slide .content {
+  padding: var(--spacing-sm);
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+/*  */
+.sec-accommodation {
+}
+.accommodation-swiper {
+  width: 100%;
+  margin-bottom: 128px;
+}
+.accommodation-slide.swiper-slide-active {
+}
+.accommodation-slide.swiper-slide {
+  width: 65%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+.accommodation-slide.swiper-slide .card-img {
+  aspect-ratio: 16/9;
+  display: flex;
+  align-items: flex-end;
+}
+.accommodation-slide.swiper-slide .card-img img {
+  height: 80%;
+}
+.accommodation-slide.swiper-slide-active .card-img img {
+  height: 100%;
+}
+
+.accommodation-slide.swiper-slide .offer-link {
+  aspect-ratio: 1;
+}
+.accommodation-slide .content {
+  display: none;
+}
+.accommodation-slide.swiper-slide-active .content {
+  display: block;
+}
+
+.swiper-slide {
+}
+.accommodation-wrapper {
+  position: relative;
+}
+.accommodation-content {
+  position: absolute;
+  bottom: -130px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f3eee8;
+  z-index: 3;
+  padding: 48px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 654px;
+  /* width: 100%; */
+}
+.accommodation-buttons {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+}
+.accommodation-buttons button {
+  padding: 24px 48px;
+  background-color: var(--color-primary);
+  border: none;
+  outline: none;
+  color: #fff;
+}
+/*  */
+.swiper-dining {
+}
+.swiper-dining .swiper-wrapper {
+}
+.swiper-dining .swiper-slide {
+}
+.swiper-dining .swiper-slide {
+  position: relative;
+  margin-bottom: var(--spacing-md);
+}
+.swiper-dining .swiper-slide .card-img {
+  aspect-ratio: 4/3;
+}
+.swiper-dining .swiper-slide .content {
+  position: absolute;
+  inset: 0;
+  color: white;
+  padding: var(--spacing-md);
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.swiper-dining .swiper-slide .content a {
+  display: block;
+  width: max-content;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: 999px;
+  background: var(--color-background);
+  margin-top: var(--spacing-sm);
+  transition: background-color 0.3s ease-in;
+  text-decoration: none;
+  color: var(--color-text);
+}
+.swiper-dining .swiper-slide .content a:hover {
+  background-color: var(--color-primary);
+  color: var(--color-background);
+}
+.swiper-dining .button-prev,
+.swiper-dining .button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  background-color: white;
+  height: 50px;
+  width: 50px;
+  line-height: 1;
+  border-radius: 100%;
+  border: none;
+}
+.swiper-dining .button-prev .icon,
+.swiper-dining .button-next .icon {
+  margin-bottom: 2px;
+}
+.swiper-dining .button-prev {
+  left: 8px;
+}
+
+.swiper-dining .button-next {
+  right: 8px;
+}
+
+/*  */
+.sec-tours {
+  position: relative;
+}
+.sec-tours .swiper-slide {
+  padding-bottom: var(--spacing-lg);
+}
+
+.swiper-tours .swiper-slide img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.swiper-tours .swiper-slide .content {
+  padding: var(--spacing-md);
+  background: var(--color-background);
+  color: var(--color-text);
+}
+.swiper-tours .button-prev,
+.swiper-tours .button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  border: 2px solid #fff;
+  background-color: transparent;
+  border-radius: 100%;
+  height: 40px;
+  width: 40px;
+  z-index: 3;
+}
+.swiper-tours .button-prev i,
+.swiper-tours .button-next i {
+  margin-bottom: 2px;
+}
+.swiper-tours .button-prev {
+  left: 4px;
+}
+.swiper-tours .button-next {
+  right: 4px;
+}
+
+/*  */
+.common-swiper .swiper-slide .card-img {
+  aspect-ratio: 16/9;
+}
+.common-swiper .swiper-slide .date-info {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  z-index: 5;
+}
+.common-swiper .swiper-slide {
+  margin-bottom: 64px;
+  margin-top: 24px;
+}
+
+.common-swiper .swiper-slide .content {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-text);
+}
+.common-swiper .swiper-slide .content h3 {
+  font-size: 20px;
+  font-weight: normal;
+  text-align: start;
+}
+
+.swiper-events .swiper-slide .content {
+  background-color: #f9f3ee;
+}
+
+/*  */
+
+@media (min-width: 1024px) {
+  .swiper-banner {
+    height: 80vh;
+  }
+}
+
+@media (max-width: 1024px) {
+  .swiper-banner {
+    height: 60vh;
+  }
+  .swiper-tours {
+    margin-top: var(--spacing-lg);
+  }
+  .accommodation-slide.swiper-slide {
+    width: 100%;
+  }
+  .accommodation-wrapper {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+}
+
+.offer-slide img {
+  aspect-ratio: 16/9;
+}
+@media (min-width: 768px) {
+  .offer-slide img {
+    aspect-ratio: 4/3;
+  }
+  .swiper-events .swiper-slide .card-img {
+    aspect-ratio: 4/3;
+  }
+}
+@media (max-width: 768px) {
+  .accommodation-content {
+    padding: 16px;
+    width: 100%;
+    position: relative;
+    min-width: auto;
+    bottom: 0;
+  }
+  .accommodation-swiper {
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .offer-slide img,
+  .swiper-events .swiper-slide .card-img {
+    aspect-ratio: 1 / 1;
+  }
+  .swiper-dining .swiper-slide {
+    max-width: 400px;
+    width: 100%;
+  }
+  .swiper-dining .swiper-wrapper {
+    justify-content: center;
+  }
+}

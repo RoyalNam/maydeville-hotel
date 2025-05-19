@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hotel</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/pages/home.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-container">
+        <div class="mobile-menu show-mobile">
+          <button class="menu-btn">
+            <i class="icon icon-bars icon-large" aria-label="Menu"></i>
+          </button>
+          <nav class="mobile-nav text-center">
+            <div class="overlay"></div>
+            <button class="mobile-nav-close" aria-label="Close menu">
+              &times;
+            </button>
+
+            <div class="mobile-nav-container">
+              <!-- Logo đầu menu -->
+              <div class="mobile-nav-logo">
+                <a href="/">
+                  <img
+                    src="./assets/images/logo-main.png"
+                    alt="Logo"
+                    class="mobile-logo w-100"
+                    style="max-width: 156px"
+                  />
+                </a>
+              </div>
+
+              <!-- Menu Items -->
+              <ul class="mobile-nav-menu">
+                <li class="mobile-nav-item">
+                  <a href="/about-us.html">About us</a>
+                </li>
+
+                <li class="mobile-nav-item">
+                  <a href="/rooms.html">Rooms</a>
+                  <ul class="mobile-submenu slide-toggle">
+                    <li>
+                      <a href="/rooms-detail.html">Superior without window</a>
+                    </li>
+                    <li>
+                      <a href="/rooms-detail.html">Deluxe Internal Window</a>
+                    </li>
+                    <li><a href="/rooms-detail.html">Premier City View</a></li>
+                    <li>
+                      <a href="/rooms-detail.html">Deluxe Single City View</a>
+                    </li>
+                  </ul>
+                  <span class="toggle-submenu"></span>
+                </li>
+
+                <li class="mobile-nav-item">
+                  <a href="/dining.html">Dining</a>
+                  <ul class="mobile-submenu slide-toggle">
+                    <li>
+                      <a href="/dining-detail.html"
+                        >May De Ville Lakeside Restaurant</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/dining-detail.html"
+                        >May De Ville Lakeside Rooftop Bar</a
+                      >
+                    </li>
+                  </ul>
+                  <span class="toggle-submenu"></span>
+                </li>
+
+                <li class="mobile-nav-item">
+                  <a href="/spa-wellness.html">Spa & Wellness</a>
+                  <ul class="mobile-submenu slide-toggle">
+                    <li><a href="/dining-detail.html">May Spa</a></li>
+                    <li><a href="/dining-detail.html">Swiming Pool</a></li>
+                    <li>
+                      <a href="/dining-detail.html">Heath Club &amp; GYM</a>
+                    </li>
+                  </ul>
+                  <span class="toggle-submenu"></span>
+                </li>
+
+                <li class="mobile-nav-item">
+                  <a href="/offers.html">Offers</a>
+                </li>
+
+                <li class="mobile-nav-item">
+                  <a href="/gallery.html">Gallery</a>
+                </li>
+
+                <li class="mobile-nav-item">
+                  <a href="/tour-services.html">Tour services</a>
+                  <ul class="mobile-submenu slide-toggle">
+                    <li><a href="/tour-services-list.html">Day Tours</a></li>
+                    <li><a href="/tour-services-list.html">Sapa Tours</a></li>
+                    <li>
+                      <a href="/tour-services-list.html">Mai Chau Village</a>
+                    </li>
+                    <li>
+                      <a href="/tour-services-list.html">Ninh Binh Excursion</a>
+                    </li>
+                    <li>
+                      <a href="/tour-services-list.html"
+                        >Transportation &amp; Visa application</a
+                      >
+                    </li>
+                  </ul>
+                  <span class="toggle-submenu"></span>
+                </li>
+
+                <li class="mobile-nav-item">
+                  <a href="#">Blog</a>
+                  <ul class="mobile-submenu slide-toggle">
+                    <li><a href="/blog-news.html">News</a></li>
+                    <li><a href="/blog-events.html">Events</a></li>
+                  </ul>
+                  <span class="toggle-submenu"></span>
+                </li>
+              </ul>
+
+              <!-- Footer Social Links -->
+              <div class="mobile-nav-footer">
+                <div
+                  class="social-icons justify-content-center justify-content-md-start"
+                >
+                  <a href="#" class="social-icon">
+                    <i class="icon icon-facebook footer-icon icon-small"></i>
+                  </a>
+                  <a href="#" class="social-icon">
+                    <i class="icon icon-youtube footer-icon icon-small"></i>
+                  </a>
+                  <a href="#" class="social-icon">
+                    <i class="icon icon-instagram footer-icon icon-small"></i>
+                  </a>
+                  <a href="#" class="social-icon">
+                    <i class="icon icon-website footer-icon icon-small"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <div class="nav-content">
+          <a href="/" class="logo-link">
+            <img
+              class="logo-image logo-light"
+              src="./assets/images/logo-main.png"
+              alt="Hotel Logo - Light"
+            />
+            <img
+              class="logo-image logo-dark"
+              src="./assets/images/logo.png"
+              alt="Hotel Logo - Dark"
+            />
+          </a>
+
+          <nav class="navbar show-desktop">
+            <ul class="navbar-menu">
+              <li class="navbar-item">
+                <a href="/about-us.html">About us </a>
+              </li>
+              <li class="navbar-item">
+                <a href="/rooms.html"
+                  >Rooms
+                  <i class="icon icon-chevron-down icon-small mt-1_5"></i>
+                </a>
+                <ul class="navbar-submenu slide-up">
+                  <li class="navbar-subitem">
+                    <a href="/rooms-detail.html">Superior without window</a>
+                  </li>
+                  <li class="navbar-subitem">
+                    <a href="/rooms-detail.html">Deluxe Internal Window</a>
+                  </li>
+                  <li class="navbar-subitem">
+                    <a href="/rooms-detail.html">Premier City View</a>
+                  </li>
+                  <li class="navbar-subitem">
+                    <a href="/rooms-detail.html">Deluxe Single City View</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="navbar-item">
+                <a href="/dining.html"
+                  >Dining
+                  <i class="icon icon-chevron-down icon-small mt-1_5"></i>
+                </a>
+                <ul class="navbar-submenu slide-up">
+                  <li class="navbar-subitem">
+                    <a href="/dining-detail.html"
+                      >May De Ville Lakeside Restaurant</a
+                    >
+                  </li>
+                  <li class="navbar-subitem">
+                    <a href="/dining-detail.html"
+                      >May De Ville Lakeside Rooftop Bar</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="navbar-item">
+                <a href="/spa-wellness.html"
+                  >Spa & Wellness
+                  <i class="icon icon-chevron-down icon-small mt-1_5"></i>
+                </a>
+                <ul class="navbar-submenu slide-up">
+                  <li class="navbar-subitem">
+                    <a href="/dining-detail.html">May Spa</a>
+                  </li>
+                  <li class="navbar-subitem">
+                    <a href="/dining-detail.html">Swiming Pool</a>
+                  </li>
+                  <li class="navbar-subitem">
+                    <a href="/dining-detail.html">Heath Club & GYM</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="navbar-item"><a href="/offers.html">Offers</a></li>
+              <li class="navbar-item"><a href="/gallery.html">Gallery</a></li>
+              <li class="navbar-item">
+                <a href="/tour-services.html"
+                  >Tour services
+                  <i class="icon icon-chevron-down icon-small mt-1_5"></i>
+                </a>
+                <ul class="navbar-submenu">
+                  <li class="navbar-subitem">
+                    <a href="/tour-services-list.html">Day Tours</a>
+                  </li>
+                  <li class="navbar-subitem">
+                    <a href="/tour-services-list.html">Sapa Tours</a>
+                  </li>
+                  <li class="navbar-subitem">
+                    <a href="/tour-services-list.html">Mai Chau Village</a>
+                  </li>
+                  <li class="navbar-subitem">
+                    <a href="/tour-services-list.html">Ninh Binh Excursion</a>
+                  </li>
+                  <li class="navbar-subitem">
+                    <a href="/tour-services-list.html"
+                      >Transportation & Visa appplication</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="navbar-item">
+                <a href="#"
+                  >Blog <i class="icon icon-chevron-down icon-small mt-1_5"></i>
+                </a>
+                <ul class="navbar-submenu">
+                  <li class="navbar-subitem">
+                    <a href="/blog-news.html">News</a>
+                  </li>
+                  <li class="navbar-subitem">
+                    <a href="/blog-events.html">Events</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header-actions">
+          <a href="/book-now.html" class="btn-book show-desktop">Book now</a>
+          <div class="gift-action">
+            <button class="btn-gift show-mobile">
+              <i class="icon icon-gift icon-small"></i>
+            </button>
+            <div class="promotion-info slide-toggle" id="promotionInfo">
+              <h4 class="promotion-title">Best Price Guarantee</h4>
+              <div class="promotion-description my-4">
+                <p>
+                  Book direct online using our Promotion Code: "MDV2025" up to
+                  30% off all rooms & suites - Guaranteed Best Price than any
+                  other sources.
+                </p>
+              </div>
+
+              <button class="btn-book">Book now</button>
+
+              <button class="btn-close" title="Close"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main style="user-select: none">
+      <section id="sec-banner" class="sec-banner">
+        <div class="swiper swiper-banner">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide banner-slide">
+              <img src="./assets/images/banner/banner-home1.jpg" alt="" />
+              <div class="overlay"></div>
+            </div>
+            <div class="swiper-slide banner-slide">
+              <img src="./assets/images/banner/banner-home2.jpg" alt="" />
+              <div class="overlay"></div>
+            </div>
+            <div class="swiper-slide banner-slide">
+              <img src="./assets/images/banner/banner-home3.jpg" alt="" />
+              <div class="overlay"></div>
+            </div>
+          </div>
+
+          <div class="swiper-button-prev show-desktop"></div>
+          <div class="swiper-button-next show-desktop"></div>
+        </div>
+      </section>
+
+      <section id="sec-welcome">
+        <div class="text-center container container-fixed-xl pt-5 pb-5">
+          <h3 class="section-subtitle">Welcom to</h3>
+          <h1 class="section-title">May De Ville Lakeside Hotel & Spa</h1>
+          <strong class="d-block mt-4 mb-4"
+            >WELCOME TO MAY DE VILLE LAKESIDE HOTEL & SPA
+          </strong>
+          <div>
+            <p>
+              Welcome to May De Ville Lakeside Hotel & Spa, the newest 5-star
+              hotel in Hanoi's Old Quarter. Our hotel offers a unique experience
+              in accommodation, with luxurious and modern amenities,
+              guaranteeing a stay that you will never forget. Our guest rooms
+              are both comfortable and stylishly designed, featuring beautiful
+              wooden furnishings, state-of-the-art technology, and all the
+              essential amenities. For the ultimate indulgence, stay in our
+              gorgeous suites and enjoy a king-sized bed, luxurious linens and
+              spa-like bathrooms.
+            </p>
+            <p>
+              Our on-site spa offers a range of relaxing treatments and
+              services, using only the best natural ingredients. From facials to
+              massages, you'll feel refreshed and invigorated after your visit.
+              We also have a fitness centre, where you can enjoy a full body
+              workout or simply take a leisurely stroll on our running track.
+            </p>
+            <p>
+              Our restaurant serves up delicious dining experiences, with
+              freshly-prepared traditional and modern Vietnamese dishes. Whether
+              you're looking for a light snack or a hearty banquet, we have
+              something for everyone. Our bar is the perfect spot for an
+              aperitif and our in-house wine cellar is well stocked with the
+              finest selection of wines from around the world.
+            </p>
+            <p>
+              Our guests have given us overwhelmingly positive reviews about our
+              hotel, with many praising the quality of our services and the
+              friendly staff. We look forward to welcoming you to May De Ville
+              Lakeside Hotel & Spa for a stay to remember.
+            </p>
+          </div>
+          <div class="show-desktop text-center mt-4">
+            <div class="row">
+              <div class="col">
+                <img
+                  src="./assets/images/other/time.png"
+                  alt=""
+                  class="essential-img"
+                />
+                <p>Flexible check-in & check-out</p>
+              </div>
+              <div class="col">
+                <img
+                  src="./assets/images/other/chat.png"
+                  alt=""
+                  class="essential-img"
+                />
+                <p>24-hour contactless concierge</p>
+              </div>
+              <div class="col">
+                <img
+                  src="./assets/images/other/rooms.png"
+                  alt=""
+                  class="essential-img"
+                />
+                <p>Personalized service</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sec-offers" class="sec-offers">
+        <h1 class="section-title mb-4">SPECIAL OFFERS</h1>
+        <div class="container">
+          <div class="swiper swiper-offers">
+            <div class="swiper-wrapper pb-4">
+              <div class="swiper-slide offer-slide">
+                <a href="/offers-detail.html" class="offer-link">
+                  <div class="card-img hover-scale">
+                    <img src="./assets/images/tours/1.jpg" alt="" />
+                  </div>
+                  <div class="content">
+                    <h3 class="card-title line-clamp-3">
+                      Be A Local Adventurer Packages (4 days 03 nights)
+                    </h3>
+                    <p class="card-text line-clamp-2 mb-1">
+                      Romance In Style package combines your stay in our
+                      luxurious...
+                    </p>
+                    <span class="btn btn-link">More info</span>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide offer-slide">
+                <a href="/offers-detail.html" class="offer-link">
+                  <div class="card-img hover-scale">
+                    <img src="./assets/images/tours/3.jpg" alt="" />
+                  </div>
+                  <div class="content">
+                    <h3 class="card-title line-clamp-3">
+                      Be A Local Adventurer Packages (4 days 03 nights)
+                    </h3>
+                    <p class="card-text line-clamp-2 mb-1">
+                      Romance In Style package combines your stay in our
+                      luxurious...
+                    </p>
+                    <span class="btn btn-link">More info</span>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide offer-slide">
+                <a href="/offers-detail.html" class="offer-link">
+                  <div class="card-img hover-scale">
+                    <img src="./assets/images/tours/4.jpg" alt="" />
+                  </div>
+                  <div class="content">
+                    <h3 class="card-title line-clamp-3">
+                      Be A Local Adventurer Packages (4 days 03 nights) Be A
+                      Local Adventurer Packages (4 days 03 nights) Be A Local
+                      Adventurer Packages (4 days 03 nights)
+                    </h3>
+                    <p class="card-text line-clamp-2 mb-1">
+                      Romance In Style package combines your stay in our Romance
+                      In Style package combines your stay in our Romance In
+                      Style package combines your stay in our Romance In Style
+                      package combines your stay in our luxurious...
+                    </p>
+                    <span class="btn btn-link">More info</span>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide offer-slide">
+                <a href="/offers-detail.html" class="offer-link">
+                  <div class="card-img hover-scale">
+                    <img src="./assets/images/tours/Jeep-Tour-6.jpg" alt="" />
+                  </div>
+                  <div class="content">
+                    <h3 class="card-title line-clamp-3">
+                      Be A Local Adventurer Packages (4 days 03 nights)
+                    </h3>
+                    <p class="line-clamp-2">
+                      Romance In Style package combines your stay in our
+                      luxurious...
+                    </p>
+                    <span class="btn btn-link">More info</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+            <button
+              class="button-prev show-desktop"
+              aria-label="Previous slide"
+            >
+              <i class="icon icon-chevron-left"></i>
+            </button>
+            <button class="button-next show-desktop" aria-label="Next slide">
+              <i class="icon icon-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="sec-accommodation" class="sec-accommodation">
+        <h1 class="section-title">Accommodation</h1>
+        <div class="accommodation-wrapper">
+          <div class="swiper accommodation-swiper">
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide accommodation-slide"
+                data-title="Superior without window"
+                data-area="18m2"
+                data-guest="2"
+                data-bed="Double/Twin"
+              >
+                <div class="card-img">
+                  <img
+                    src="./assets/images/tours/1.jpg"
+                    alt="Superior without window"
+                  />
+                </div>
+              </div>
+              <div
+                class="swiper-slide accommodation-slide"
+                data-title="Deluxe Room"
+                data-area="25m2"
+                data-guest="2-3"
+                data-bed="King Size"
+              >
+                <div class="card-img">
+                  <img src="./assets/images/tours/3.jpg" alt="" />
+                </div>
+              </div>
+              <div
+                class="swiper-slide accommodation-slide"
+                data-title="Suite"
+                data-area="40m2"
+                data-guest="4"
+                data-bed="2 King Beds"
+              >
+                <div class="card-img">
+                  <img src="./assets/images/tours/4.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accommodation-content">
+            <h3
+              id="accommodation-title"
+              class="card-title text-uppercase fw-normal"
+            ></h3>
+            <ul class="accommodation-features fw-light">
+              <li>
+                <span class="feature-name">Average area</span>:
+                <span id="accommodation-area"></span>
+              </li>
+              <li>
+                <span class="feature-name">Guest</span>:
+                <span id="accommodation-guest"></span>
+              </li>
+              <li>
+                <span class="feature-name">Bed</span>:
+                <span id="accommodation-bed"></span>
+              </li>
+            </ul>
+            <a href="/rooms-detail.html" class="btn btn-link p-0 fw-light"
+              >Details</a
+            >
+            <div class="accommodation-buttons">
+              <button class="button-prev" aria-label="Previous slide">
+                <i class="icon icon-chevron-left icon-xlarge"></i>
+              </button>
+              <button class="button-next" aria-label="Next slide">
+                <i class="icon icon-chevron-right icon-xlarge"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sec-dining" class="sec-dining px-3 py-5">
+        <h3 class="section-subtitle text-center">Dining</h3>
+        <h1 class="section-title">Restaurant & Bar</h1>
+        <div class="swiper swiper-dining">
+          <div class="swiper-wrapper pb-4">
+            <div class="swiper-slide">
+              <div class="card-img">
+                <img src="./assets/images/tours/1.jpg" alt="" />
+                <div class="overlay"></div>
+              </div>
+
+              <div class="content">
+                <h3 class="card-title line-clamp-3">
+                  Be A Local Adventurer Packages (4 days 03 nights)
+                </h3>
+                <a href="/dining-detail.html">View details</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-img">
+                <img src="./assets/images/other/chat.png" alt="" />
+                <div class="overlay"></div>
+              </div>
+              <div class="content">
+                <h3 class="line-clamp-2">
+                  Be A Local Adventurer Packages (4 days 03 nights)
+                </h3>
+                <a href="/dining-detail.html">View details</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <button class="button-prev show-mobile" aria-label="Previous slide">
+            <i class="icon icon-chevron-left icon-small"></i>
+          </button>
+          <button class="button-next show-mobile" aria-label="Next slide">
+            <i class="icon icon-chevron-right icon-small"></i>
+          </button>
+        </div>
+      </section>
+
+      <section id="sec-tours-transfers" class="sec-tours dark-theme">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <h3 class="section-subtitle">Services</h3>
+              <h1 class="section-title text-start mb-3">Tours & Transfers</h1>
+              <p>
+                At May De Ville Lakeside Hotel & Spa, we tailor your Vietnam
+                itinerary, providing seamless travel planning, up-to-date
+                information, and expert suggestions for maximizing your time in
+                Vietnam.
+              </p>
+            </div>
+            <div class="col-12 col-md-8">
+              <div class="swiper swiper-tours">
+                <div class="swiper-wrapper pb-4">
+                  <div class="swiper-slide">
+                    <a href="/tour-services-list.html" class="d-block">
+                      <div class="card-img position-relative hover-scale">
+                        <img src="./assets/images/tours/1.jpg" alt="" />
+                        <div class="overlay"></div>
+                      </div>
+                      <div class="content">
+                        <h3 class="card-title line-clamp-2">
+                          Halong Bay Cruises Halong Bay Cruises Halong Bay C
+                          uises Halong Bay Cruises
+                        </h3>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="/tour-services-list.html" class="d-block">
+                      <div class="card-img position-relative hover-scale">
+                        <img src="./assets/images/tours/4.jpg" alt="" />
+                        <div class="overlay"></div>
+                      </div>
+                      <div class="content">
+                        <h3 class="card-title line-clamp-2">Sapa Tours</h3>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="/tour-services-list.html" class="d-block">
+                      <div class="card-img position-relative hover-scale">
+                        <img src="./assets/images/tours/3.jpg" alt="" />
+                        <div class="overlay"></div>
+                      </div>
+                      <div class="content">
+                        <h3 class="line-clamp-2">Airport transfer</h3>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <button
+                  class="button-prev show-desktop"
+                  aria-label="Previous slide"
+                >
+                  <i class="icon icon-chevron-left icon-small"></i>
+                </button>
+                <button
+                  class="button-next show-desktop"
+                  aria-label="Next slide"
+                >
+                  <i class="icon icon-chevron-right icon-small"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sec-events" class="sec-events py-5">
+        <div class="container">
+          <h1 class="section-title mb-3">Events</h1>
+          <a
+            href="/blog-events.html"
+            class="btn btn-outline-dark d-flex align-items-center gap-2 mx-auto"
+          >
+            View details
+            <i class="icon icon-arrow-right-long icon-xsmall"></i>
+          </a>
+
+          <div class="swiper swiper-events common-swiper">
+            <div class="swiper-wrapper pb-4">
+              <div class="swiper-slide position-relative">
+                <div class="card-img position-relative">
+                  <img src="./assets/images/tours/1.jpg" alt="" />
+                  <div class="overlay"></div>
+                  <div class="date-info">
+                    <span class="month">May</span>
+                    <span class="day">13</span>
+                  </div>
+                </div>
+                <a href="/blog-events-detail.html" class="content floating-box">
+                  <h3 class="card-title line-clamp-3">
+                    Halong Bay Cruises along Bay Cruises along Bay Cruises
+                    Halong Bay Cruises along Bay Cruises along Bay Cruises
+                  </h3>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-img position-relative">
+                  <img src="./assets/images/tours/4.jpg" alt="" />
+                  <div class="overlay"></div>
+                  <div class="date-info">
+                    <span class="month">May</span>
+                    <span class="day">13</span>
+                  </div>
+                </div>
+                <a href="/blog-events-detail.html" class="content floating-box">
+                  <h3 class="card-title line-clamp-3">Halong Bay Cruises</h3>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-img position-relative">
+                  <img src="./assets/images/tours/3.jpg" alt="" />
+                  <div class="overlay"></div>
+                  <div class="date-info">
+                    <span class="month">May</span>
+                    <span class="day">13</span>
+                  </div>
+                </div>
+                <a href="/blog-events-detail.html" class="content floating-box">
+                  <h3 class="card-title line-clamp-3">Halong Bay Cruises</h3>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-img position-relative">
+                  <img src="./assets/images/tours/3.jpg" alt="" />
+                  <div class="overlay"></div>
+                  <div class="date-info">
+                    <span class="month">May</span>
+                    <span class="day">13</span>
+                  </div>
+                </div>
+                <a href="/blog-events-detail.html" class="content floating-box">
+                  <h3 class="card-title line-clamp-3">Halong Bay Cruises</h3>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-img position-relative">
+                  <img src="./assets/images/tours/3.jpg" alt="" />
+                  <div class="overlay"></div>
+                  <div class="date-info">
+                    <span class="month">May</span>
+                    <span class="day">13</span>
+                  </div>
+                </div>
+                <a href="/blog-events-detail.html" class="content floating-box">
+                  <h3 class="card-title line-clamp-3">Halong Bay Cruises</h3>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sec-news" class="sec-news py-5 dark-theme">
+        <div class="container">
+          <div class="text-center container-fixed-xl mx-auto">
+            <h1 class="section-title mb-3">News</h1>
+            <p>
+              Discover our extensive guide for first-timers in Hanoi with
+              recommendations for local dishes, tourist attractions and travel
+              tips for Vietnam’s vibrant city!
+            </p>
+          </div>
+          <div class="swiper swiper-news common-swiper">
+            <div class="swiper-wrapper pb-4">
+              <div class="swiper-slide position-relative">
+                <div class="card-img position-relative">
+                  <img src="./assets/images/tours/1.jpg" alt="" />
+                  <div class="overlay"></div>
+                  <div class="date-info">
+                    <span class="month">May</span>
+                    <span class="day">13</span>
+                  </div>
+                </div>
+                <a href="/blog-events-detail.html" class="content floating-box">
+                  <h3 class="card-title line-clamp-3">
+                    Halong Bay Cruises along Bay Cruises along Bay Cruises
+                    Halong Bay Cruises along Bay Cruises along Bay Cruises
+                  </h3>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-img position-relative">
+                  <img src="./assets/images/tours/4.jpg" alt="" />
+                  <div class="overlay"></div>
+                  <div class="date-info">
+                    <span class="month">May</span>
+                    <span class="day">13</span>
+                  </div>
+                </div>
+                <a href="/blog-events-detail.html" class="content floating-box">
+                  <h3 class="card-title line-clamp-3">Halong Bay Cruises</h3>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-img position-relative">
+                  <img src="./assets/images/tours/3.jpg" alt="" />
+                  <div class="overlay"></div>
+                  <div class="date-info">
+                    <span class="month">May</span>
+                    <span class="day">13</span>
+                  </div>
+                </div>
+                <a href="/blog-events-detail.html" class="content floating-box">
+                  <h3 class="card-title line-clamp-3">Halong Bay Cruises</h3>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-img position-relative">
+                  <img src="./assets/images/tours/3.jpg" alt="" />
+                  <div class="overlay"></div>
+                  <div class="date-info">
+                    <span class="month">May</span>
+                    <span class="day">13</span>
+                  </div>
+                </div>
+                <a href="/blog-events-detail.html" class="content floating-box">
+                  <h3 class="card-title line-clamp-3">Halong Bay Cruises</h3>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-img position-relative">
+                  <img src="./assets/images/tours/3.jpg" alt="" />
+                  <div class="overlay"></div>
+                  <div class="date-info">
+                    <span class="month">May</span>
+                    <span class="day">13</span>
+                  </div>
+                </div>
+                <a href="/blog-events-detail.html" class="content floating-box">
+                  <h3 class="card-title line-clamp-3">Halong Bay Cruises</h3>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--  -->
+    <footer class="footer">
+      <div class="container">
+        <!-- Top -->
+        <div class="row footer-top text-center text-md-start">
+          <!-- Logo -->
+          <div class="col-12 col-md-3 footer-logo pb-4">
+            <a href="/" class="d-block">
+              <img
+                src="./assets/images/logo.png"
+                alt="May De Ville Logo"
+                class="w-100"
+                style="max-width: 156px"
+              />
+            </a>
+          </div>
+
+          <!-- Contact info -->
+          <div class="col-12 col-md-6 footer-info pb-4">
+            <div class="footer-contact-item">
+              <i class="icon icon-location-dot footer-icon icon-small"></i>
+
+              <span class="footer-label">Địa chỉ:</span>
+              <h5 class="footer-text">
+                43 Gia Ngu Str., Hoan Kiem Dist., Hanoi, Vietnam
+              </h5>
+            </div>
+            <div class="footer-contact-item">
+              <i class="icon icon-phone-volume footer-icon icon-small"></i>
+              <span class="footer-label">Phone:</span>
+              <h5 class="footer-text">
+                <a href="tel:+842439335688">+84 243933 5688</a>
+              </h5>
+            </div>
+            <div class="footer-contact-item">
+              <i class="icon icon-phone-volume footer-icon icon-small"></i>
+              <span class="footer-label">Hotline:</span>
+              <h5 class="footer-text">
+                <a href="tel:+842439335688">+84 243933 5688</a>
+              </h5>
+            </div>
+            <div class="footer-contact-item">
+              <i class="icon icon-email footer-icon icon-small"></i>
+              <span class="footer-label">Email:</span>
+              <h5 class="footer-text">
+                <a href="mailto:em@maydeville.com">em@maydeville.com</a>
+              </h5>
+            </div>
+          </div>
+
+          <!-- Social -->
+          <div class="col-12 col-md-3 footer-social pb-4">
+            <h5>Find on us</h5>
+            <div
+              class="social-icons justify-content-center justify-content-md-start"
+            >
+              <a href="#" class="social-icon">
+                <i class="icon icon-facebook footer-icon icon-small"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="icon icon-youtube footer-icon icon-small"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="icon icon-instagram footer-icon icon-small"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="icon icon-website footer-icon icon-small"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Middle: Info sections with links -->
+        <div class="row footer-nav text-center text-md-start flex-wrap">
+          <div class="col-12 col-md footer-col-5 mb-3">
+            <h5 class="footer-heading">
+              About us
+              <i class="icon icon-chevron-down footer-icon icon-small"></i>
+            </h5>
+            <ul class="list-unstyled footer-menu slide-toggle">
+              <li><a href="/about-us.html" class="footer-link">History</a></li>
+              <li><a href="/about-us.html" class="footer-link">Vision</a></li>
+              <li><a href="/about-us.html" class="footer-link">Mission</a></li>
+              <li>
+                <a href="/contact-us.html" class="footer-link">Contact us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md footer-col-5 mb-3">
+            <h5 class="footer-heading">
+              Dining
+              <i class="icon icon-chevron-down footer-icon icon-small"></i>
+            </h5>
+            <ul class="list-unstyled footer-menu slide-toggle">
+              <li>
+                <a href="/dining-detail.html" class="footer-link"
+                  >May De Ville Lakeside Restaurant</a
+                >
+              </li>
+              <li>
+                <a href="/dining-detail.html" class="footer-link"
+                  >May De Ville Lakeside Rooftop Bar</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md footer-col-5 mb-3">
+            <h5 class="footer-heading">
+              Spa & Wellness
+              <i class="icon icon-chevron-down footer-icon icon-small"></i>
+            </h5>
+            <ul class="list-unstyled footer-menu slide-toggle">
+              <li>
+                <a href="/dining-detail.html" class="footer-link">May Spa</a>
+              </li>
+              <li>
+                <a href="/dining-detail.html" class="footer-link"
+                  >Swimming Pool</a
+                >
+              </li>
+              <li>
+                <a href="/dining-detail.html" class="footer-link"
+                  >Health Club & GYM</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md footer-col-5 mb-3">
+            <h5 class="footer-heading">
+              Explore
+              <i class="icon icon-chevron-down footer-icon icon-small"></i>
+            </h5>
+            <ul class="list-unstyled footer-menu slide-toggle">
+              <li>
+                <a href="/gallery.html" class="footer-link">Gallery</a>
+              </li>
+              <li><a href="/blog.html" class="footer-link">Blog</a></li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md footer-col-5 mb-3">
+            <h5 class="footer-heading">
+              Support
+              <i class="icon icon-chevron-down footer-icon icon-small"></i>
+            </h5>
+            <ul class="list-unstyled footer-menu slide-toggle">
+              <li><a href="/faq" class="footer-link">FAQ</a></li>
+              <li><a href="/terms" class="footer-link">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom -->
+        <div class="row footer-bottom mt-4">
+          <div class="col-12 text-center">
+            <p class="mb-0 small">
+              &copy; 2025 May De Ville Hotel. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+.interested-item:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+.interested-content h5 {
+  font-size: 32px;
+}

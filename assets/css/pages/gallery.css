@@ -1,0 +1,88 @@
+.masonry {
+  column-count: 1;
+  column-gap: 1rem;
+}
+@media (min-width: 768px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+@media (min-width: 1024px) {
+  .masonry {
+    column-count: 3;
+  }
+}
+.masonry .item {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.masonry .item::before,
+.masonry .item::after {
+  content: "";
+  position: absolute;
+  inset: 20px;
+  opacity: 0;
+  transition: transform 0.8s ease, opacity 0.8s ease;
+  z-index: 5;
+}
+
+.masonry .item::after {
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+  transform: scale(1, 0);
+}
+
+.masonry .item::before {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  transform: scale(0, 1);
+}
+.masonry .item .overlay {
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+.masonry .item:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.masonry .item:hover::before,
+.masonry .item:hover::after {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+
+.btn-container {
+}
+
+.btn-container button {
+  border-width: 1px;
+
+  transition: background-color 0.3s ease;
+}
+
+.btn-container button:hover {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.btn-container button {
+  border: 1px solid #ccc;
+  background-color: transparent;
+  padding: 8px 16px;
+  /* font-weight: 500; */
+  /* border-radius: 5px; */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-container button:hover {
+  background-color: var(--color-primary);
+  color: white;
+}
+.btn-container button.active {
+  color: white;
+  background-color: var(--color-primary);
+  border: none;
+}

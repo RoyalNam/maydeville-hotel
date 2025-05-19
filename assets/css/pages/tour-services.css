@@ -1,0 +1,103 @@
+.booking-form-section {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+}
+.booking-form-section.active {
+  display: block;
+}
+.booking-form-section .overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.booking-form-section .container-fixed-xl {
+  position: relative;
+  background-color: white;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.booking-form-section .form-wrapper {
+  overflow-y: auto;
+  width: 100%;
+  position: relative;
+  height: 100%;
+  z-index: 2;
+  height: 100vh;
+}
+.booking-form-section .overlay {
+}
+
+.booking-form-section .close-btn {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  padding: 8px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  line-height: 1;
+  background-color: transparent;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 0;
+}
+.booking-form-section .close-btn:hover {
+  background-color: #3d3a33;
+  color: var(--color-primary);
+}
+.form-title {
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 32px;
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+}
+.form-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 1.5px;
+  width: 100px;
+  background-color: #000;
+}
+.form-note {
+  text-align: center;
+}
+.contact-form {
+  max-width: 100%;
+}
+
+.form-section-title {
+  position: relative;
+  padding-top: 12px;
+  margin-top: 18px;
+  text-align: center;
+}
+.form-section-title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000;
+}
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--color-primary);
+  box-shadow: none;
+}
+
+.btn-submit {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #000;
+  color: white;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}

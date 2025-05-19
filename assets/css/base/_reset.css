@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+}
+
+/*  */
+.show-desktop {
+  display: none;
+}
+
+.show-mobile {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .show-desktop {
+    display: block;
+  }
+  .show-mobile {
+    display: none;
+  }
+}
+
+.color-dark {
+  color: var(--color-background);
+}
+
+.mt-1_5 {
+  margin-top: 6px;
+}

@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hotel</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/pages/book-now.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-container">
+        <div class="mobile-menu show-mobile">
+          <button class="menu-btn">
+            <i class="icon icon-bars icon-large" aria-label="Menu"></i>
+          </button>
+          <nav class="mobile-nav text-center">
+            <div class="overlay"></div>
+            <button class="mobile-nav-close" aria-label="Close menu">
+              &times;
+            </button>
+
+            <div class="mobile-nav-container">
+              <!-- Logo đầu menu -->
+              <div class="mobile-nav-logo">
+                <a href="/">
+                  <img
+                    src="./assets/images/logo-main.png"
+                    alt="Logo"
+                    class="mobile-logo w-100"
+                    style="max-width: 156px"
+                  />
+                </a>
+              </div>
+
+              <!-- Menu Items -->
+              <ul class="mobile-nav-menu">
+                <li class="mobile-nav-item">
+                  <a href="#">About us</a>
+                </li>
+                <li class="mobile-nav-item">
+                  <a href="#">Rooms</a>
+                  <ul class="mobile-submenu">
+                    <li><a href="#">May lake view</a></li>
+                    <li><a href="#">Family city view</a></li>
+                    <li><a href="#">Premier city view</a></li>
+                  </ul>
+                  <span class="toggle-submenu"></span>
+                </li>
+
+                <li class="mobile-nav-item">
+                  <a href="#">Restaurant</a>
+                  <ul class="mobile-submenu">
+                    <li><a href="#">May lake view</a></li>
+                    <li><a href="#">Family city view</a></li>
+                    <li><a href="#">Premier city view</a></li>
+                  </ul>
+                </li>
+                <li class="mobile-nav-item">
+                  <a href="#">Dining</a>
+                </li>
+              </ul>
+
+              <!-- Footer Social Links -->
+              <div class="mobile-nav-footer">
+                <div
+                  class="social-icons justify-content-center justify-content-md-start"
+                >
+                  <a href="#" class="social-icon">
+                    <i class="icon icon-facebook footer-icon icon-small"></i>
+                  </a>
+                  <a href="#" class="social-icon">
+                    <i class="icon icon-youtube footer-icon icon-small"></i>
+                  </a>
+                  <a href="#" class="social-icon">
+                    <i class="icon icon-instagram footer-icon icon-small"></i>
+                  </a>
+                  <a href="#" class="social-icon">
+                    <i class="icon icon-website footer-icon icon-small"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <div class="nav-content">
+          <a href="/" class="logo-link">
+            <img
+              class="logo-image logo-light"
+              src="./assets/images/logo-main.png"
+              alt="Hotel Logo - Light"
+            />
+            <img
+              class="logo-image logo-dark"
+              src="./assets/images/logo.png"
+              alt="Hotel Logo - Dark"
+            />
+          </a>
+
+          <nav class="navbar show-desktop">
+            <ul class="navbar-menu">
+              <li class="navbar-item">
+                <a href="./about-us.html"
+                  >About us
+                  <i class="icon icon-chevron-down icon-small mt-1_5"></i>
+                </a>
+                <ul class="navbar-submenu slide-up">
+                  <li class="navbar-subitem">
+                    <a href="#">Superior without window</a>
+                  </li>
+                  <li class="navbar-subitem">
+                    <a href="#">Superior without test</a>
+                  </li>
+                  <li class="navbar-subitem"><a href="#">Test</a></li>
+                </ul>
+              </li>
+              <li class="navbar-item"><a href="./rooms.html">Rooms</a></li>
+              <li class="navbar-item"><a href="#">Dining</a></li>
+              <li class="navbar-item"><a href="#">Spa & Wellness</a></li>
+              <li class="navbar-item"><a href="#">Offers</a></li>
+              <li class="navbar-item"><a href="#">Gallery</a></li>
+              <li class="navbar-item">
+                <a href="#"
+                  >Tour services
+                  <i class="icon icon-chevron-down icon-small mt-1_5"></i>
+                </a>
+                <ul class="navbar-submenu">
+                  <li class="navbar-subitem">
+                    <a href="#">Superior without window</a>
+                  </li>
+                  <li class="navbar-subitem">
+                    <a href="#">Superior without test</a>
+                  </li>
+                  <li class="navbar-subitem"><a href="#">Test</a></li>
+                </ul>
+              </li>
+              <li class="navbar-item"><a href="#">Blog</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header-actions">
+          <a href="" class="btn-book show-desktop">Book now</a>
+          <div class="gift-action">
+            <button class="btn-gift show-mobile">
+              <i class="icon icon-gift icon-small"></i>
+            </button>
+            <div class="promotion-info active">
+              <h4 class="promotion-title">Best Price Guarantee</h4>
+              <div class="promotion-description my-4">
+                <p>
+                  Book direct online using our Promotion Code: "MDV2025" up to
+                  30% off all rooms & suites - Guaranteed Best Price than any
+                  other sources.
+                </p>
+              </div>
+
+              <button class="btn-book">Book now</button>
+
+              <button class="btn-close" title="Close"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main style="user-select: none">
+      <section id="banner-home" class="banner-section">
+        <div class="banner-wrapper">
+          <img
+            src="./assets/images/banner/banner-home1.jpg"
+            alt="Banner Home"
+            class="banner-image"
+          />
+          <div class="overlay"></div>
+          <div class="banner-content">
+            <h2>May De Ville Lakeside Restaurant</h2>
+          </div>
+        </div>
+      </section>
+
+      <section id="booking-section" class="book-sec py-5">
+        <div class="book-container container" id="">
+          <h4 class="title">Đặt phòng</h4>
+          <form
+            action="/your-action-url"
+            class="form-sidebar row mt-4"
+            method="post"
+            id="book-tour"
+          >
+            <input type="hidden" name="TourCode" value="MÃ_TOUR" />
+
+            <div class="form-group col-md-6 col-lg-3">
+              <label for="check-in">Ngày đến</label>
+              <input
+                type="date"
+                id="check-in"
+                name="CheckIn"
+                class="form-control"
+              />
+            </div>
+
+            <div class="form-group col-md-6 col-lg-3">
+              <label for="check-out">Ngày đi</label>
+              <input
+                type="date"
+                id="check-out"
+                name="CheckOut"
+                class="form-control"
+              />
+            </div>
+
+            <div class="form-group col-md-6 col-lg-3">
+              <label for="adult">Người lớn</label>
+              <select id="adult" name="Adult" class="form-control"></select>
+            </div>
+
+            <div class="form-group col-md-6 col-lg-3">
+              <label for="children">Trẻ em</label>
+              <select
+                id="children"
+                name="Children"
+                class="form-control"
+              ></select>
+            </div>
+
+            <div class="form-group col-md-6 col-lg-3">
+              <label for="fullname">Họ và tên</label>
+              <input
+                type="text"
+                id="fullname"
+                name="FullName"
+                class="form-control"
+              />
+            </div>
+
+            <div class="form-group col-md-6 col-lg-3">
+              <label for="phone">Số điện thoại</label>
+              <input
+                type="text"
+                id="phone"
+                name="PhoneNumber"
+                class="form-control"
+              />
+            </div>
+
+            <div class="form-group col-md-6 col-lg-3">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="Email"
+                class="form-control"
+              />
+            </div>
+
+            <div class="form-group col-md-6 col-lg-3">
+              <label for="address">Địa chỉ</label>
+              <input
+                type="text"
+                id="address"
+                name="Address"
+                class="form-control"
+              />
+            </div>
+
+            <div class="form-group col-12">
+              <label for="other-request">Yêu cầu khác</label>
+              <textarea
+                id="other-request"
+                name="OtherRequest"
+                class="form-control"
+                rows="2"
+                placeholder="Nhập thêm yêu cầu đặc biệt (nếu có)..."
+              ></textarea>
+            </div>
+            <div class="form-group col-12">
+              <label>Chọn loại phòng</label>
+              <div class="table-responsive">
+                <table class="table table-bordered align-middle">
+                  <thead class="">
+                    <tr>
+                      <th>Hình ảnh</th>
+                      <th>Loại phòng</th>
+                      <th>Giá</th>
+                      <th style="width: 100px">Số lượng</th>
+                    </tr>
+                  </thead>
+                  <tbody class="">
+                    <tr>
+                      <td>
+                        <img
+                          src="./assets/images/tours/1.jpg"
+                          alt="Phòng 1"
+                          width="80"
+                        />
+                      </td>
+                      <td>
+                        Sàn Nghỉ Cộng Đồng 30 Khách (Sập Gụ NS - Ngoạn Sơn)
+                      </td>
+                      <td>200.000 VND</td>
+                      <td>
+                        <input
+                          type="number"
+                          name="Room1"
+                          class="form-control"
+                          value="1"
+                          min="0"
+                          max="30"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          src="./assets/images/tours/1.jpg"
+                          alt="Phòng 2"
+                          width="80"
+                        />
+                      </td>
+                      <td>Sàn Nghỉ Công Suất 40 Khách (N2T1 - Ngoạn Sơn)</td>
+                      <td>200.000 VND</td>
+                      <td>
+                        <input
+                          type="number"
+                          name="Room2"
+                          class="form-control"
+                          value="0"
+                          min="0"
+                          max="40"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          src="./assets/images/tours/1.jpg"
+                          alt="Phòng 3"
+                          width="80"
+                        />
+                      </td>
+                      <td>Sàn Nghỉ Cộng đồng 40 Khách (Lễ Tân - Ngoạn Sơn)</td>
+                      <td>200.000 VND</td>
+                      <td>
+                        <input
+                          type="number"
+                          name="Room3"
+                          class="form-control"
+                          value="0"
+                          min="0"
+                          max="40"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          src="./assets/images/tours/1.jpg"
+                          alt="Phòng 4"
+                          width="80"
+                        />
+                      </td>
+                      <td>Sàn Nghỉ Cộng Đồng 50 Khách (Khu Trung Sơn)</td>
+                      <td>120.000 VND</td>
+                      <td>
+                        <input
+                          type="number"
+                          name="Room4"
+                          class="form-control"
+                          value="0"
+                          min="0"
+                          max="50"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          src="./assets/images/tours/1.jpg"
+                          alt="Phòng 5"
+                          width="80"
+                        />
+                      </td>
+                      <td>
+                        Sàn Nghỉ Cộng Đồng 40 Khách (Lễ Tân TS & A2 TS - Trung
+                        Sơn)
+                      </td>
+                      <td>120.000 VND</td>
+                      <td>
+                        <input
+                          type="number"
+                          name="Room5"
+                          class="form-control"
+                          value="0"
+                          min="0"
+                          max="40"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          src="./assets/images/tours/1.jpg"
+                          alt="Phòng 6"
+                          width="80"
+                        />
+                      </td>
+                      <td>Phòng nghỉ biệt thự Tây Âu - Trung Sơn</td>
+                      <td>2.500.000 VND</td>
+                      <td>
+                        <input
+                          type="number"
+                          name="Room6"
+                          class="form-control"
+                          value="0"
+                          min="0"
+                          max="10"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          src="./assets/images/tours/1.jpg"
+                          alt="Phòng 7"
+                          width="80"
+                        />
+                      </td>
+                      <td>Phòng tiêu chuẩn một giường - Ngoạn Sơn</td>
+                      <td>1.500.000 VND</td>
+                      <td>
+                        <input
+                          type="number"
+                          name="Room7"
+                          class="form-control"
+                          value="0"
+                          min="0"
+                          max="10"
+                        />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Captcha -->
+            <div class="form-group col-12">
+              <input
+                type="text"
+                class="form-control"
+                name="Captcha"
+                placeholder="Captcha"
+                required
+                style="display: inline-block; width: auto"
+              />
+              <span style="color: red">Mã captcha sai</span>
+              <img src="/captcha" alt="captcha" />
+            </div>
+
+            <!-- Validation summary -->
+            <div class="form-group col-12">
+              <div class="validation-summary"></div>
+            </div>
+
+            <!-- Submit button -->
+            <div class="form-group col-12">
+              <div class="btn-sidebar text-center">
+                <button type="submit" class="btn btn-primary">
+                  Đặt ngay
+                  <span><i class="icon icon-paper-plane icon-small"></i></span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--  -->
+    <footer class="footer">
+      <div class="container">
+        <!-- Top -->
+        <div class="row footer-top text-center text-md-start">
+          <!-- Logo -->
+          <div class="col-12 col-md-3 footer-logo pb-4">
+            <a href="/" class="d-block">
+              <img
+                src="./assets/images/logo.png"
+                alt="May De Ville Logo"
+                class="w-100"
+                style="max-width: 156px"
+              />
+            </a>
+          </div>
+
+          <!-- Contact info -->
+          <div class="col-12 col-md-6 footer-info pb-4">
+            <div class="footer-contact-item">
+              <i class="icon icon-location-dot footer-icon icon-small"></i>
+
+              <span class="footer-label">Địa chỉ:</span>
+              <h5 class="footer-text">
+                43 Gia Ngu Str., Hoan Kiem Dist., Hanoi, Vietnam
+              </h5>
+            </div>
+            <div class="footer-contact-item">
+              <i class="icon icon-phone-volume footer-icon icon-small"></i>
+              <span class="footer-label">Phone:</span>
+              <h5 class="footer-text">
+                <a href="tel:+842439335688">+84 243933 5688</a>
+              </h5>
+            </div>
+            <div class="footer-contact-item">
+              <i class="icon icon-phone-volume footer-icon icon-small"></i>
+              <span class="footer-label">Hotline:</span>
+              <h5 class="footer-text">
+                <a href="tel:+842439335688">+84 243933 5688</a>
+              </h5>
+            </div>
+            <div class="footer-contact-item">
+              <i class="icon icon-email footer-icon icon-small"></i>
+              <span class="footer-label">Email:</span>
+              <h5 class="footer-text">
+                <a href="mailto:em@maydeville.com">em@maydeville.com</a>
+              </h5>
+            </div>
+          </div>
+
+          <!-- Social -->
+          <div class="col-12 col-md-3 footer-social pb-4">
+            <h5>Find on us</h5>
+            <div
+              class="social-icons justify-content-center justify-content-md-start"
+            >
+              <a href="#" class="social-icon">
+                <i class="icon icon-facebook footer-icon icon-small"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="icon icon-youtube footer-icon icon-small"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="icon icon-instagram footer-icon icon-small"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="icon icon-website footer-icon icon-small"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Middle: Info sections with links -->
+        <div class="row footer-nav text-center text-md-start flex-wrap">
+          <div class="col-12 col-md footer-col-5 mb-3">
+            <h5 class="footer-heading">
+              About us
+              <i class="icon icon-chevron-down footer-icon icon-small"></i>
+            </h5>
+            <ul class="list-unstyled footer-menu">
+              <li><a href="/about/history" class="footer-link">History</a></li>
+              <li><a href="/about/vision" class="footer-link">Vision</a></li>
+              <li><a href="/about/mission" class="footer-link">Mission</a></li>
+              <li><a href="/contact" class="footer-link">Contact us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md footer-col-5 mb-3">
+            <h5 class="footer-heading">
+              Dining
+              <i class="icon icon-chevron-down footer-icon icon-small"></i>
+            </h5>
+            <ul class="list-unstyled footer-menu">
+              <li>
+                <a href="/dining/restaurant" class="footer-link"
+                  >May De Ville Lakeside Restaurant</a
+                >
+              </li>
+              <li>
+                <a href="/dining/rooftop-bar" class="footer-link"
+                  >May De Ville Lakeside Rooftop Bar</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md footer-col-5 mb-3">
+            <h5 class="footer-heading">
+              Spa & Wellness
+              <i class="icon icon-chevron-down footer-icon icon-small"></i>
+            </h5>
+            <ul class="list-unstyled footer-menu">
+              <li><a href="/spa" class="footer-link">May Spa</a></li>
+              <li><a href="/spa/pool" class="footer-link">Swimming Pool</a></li>
+              <li>
+                <a href="/spa/health-club" class="footer-link"
+                  >Health Club & GYM</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md footer-col-5 mb-3">
+            <h5 class="footer-heading">
+              Explore
+              <i class="icon icon-chevron-down footer-icon icon-small"></i>
+            </h5>
+            <ul class="list-unstyled footer-menu">
+              <li>
+                <a href="/explore/gallery" class="footer-link">Gallery</a>
+              </li>
+              <li><a href="/explore/blog" class="footer-link">Blog</a></li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md footer-col-5 mb-3">
+            <h5 class="footer-heading">
+              Support
+              <i class="icon icon-chevron-down footer-icon icon-small"></i>
+            </h5>
+            <ul class="list-unstyled footer-menu">
+              <li><a href="/faq" class="footer-link">FAQ</a></li>
+              <li><a href="/terms" class="footer-link">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom -->
+        <div class="row footer-bottom mt-4">
+          <div class="col-12 text-center">
+            <p class="mb-0 small">
+              &copy; 2025 May De Ville Hotel. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const checkInInput = document.getElementById("check-in");
+        const checkOutInput = document.getElementById("check-out");
+        const adultSelect = document.getElementById("adult");
+        const childrenSelect = document.getElementById("children");
+
+        const formatDate = (date) => date.toISOString().split("T")[0];
+
+        const today = new Date();
+        const tomorrow = new Date(today);
+        tomorrow.setDate(today.getDate() + 1);
+
+        const todayStr = formatDate(today);
+        const tomorrowStr = formatDate(tomorrow);
+
+        checkInInput.min = todayStr;
+        checkInInput.value = todayStr;
+
+        checkOutInput.min = tomorrowStr;
+        checkOutInput.value = tomorrowStr;
+
+        checkInInput.addEventListener("change", function () {
+          const newCheckIn = new Date(this.value);
+          const nextDay = new Date(newCheckIn);
+          nextDay.setDate(newCheckIn.getDate() + 1);
+          const nextDayStr = formatDate(nextDay);
+
+          checkOutInput.min = nextDayStr;
+
+          if (new Date(checkOutInput.value) <= newCheckIn) {
+            checkOutInput.value = nextDayStr;
+          }
+        });
+
+        const createOptions = (selectElement, defaultValue = 0) => {
+          for (let i = 0; i <= 9; i++) {
+            const option = document.createElement("option");
+            option.value = i;
+            option.textContent = i;
+            selectElement.appendChild(option);
+          }
+          selectElement.value = defaultValue;
+        };
+
+        createOptions(adultSelect, 1);
+        createOptions(childrenSelect, 0);
+      });
+    </script>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+.promotion-tag {
+  position: absolute;
+  color: #fff;
+  background-color: var(--color-primary);
+  left: 0;
+  top: 15px;
+  padding: 6px 12px;
+  z-index: 2;
+  text-transform: uppercase;
+}

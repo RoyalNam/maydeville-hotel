@@ -1,0 +1,31 @@
+:root {
+  --color-background: #ffffff;
+  --color-text: #222222;
+  --color-primary: #ca8b11;
+  --dark-text-muted: #c4c4c4;
+  --color-secondary: #aa730e;
+  /*  */
+  --color-accent: #17a2b8;
+  --color-success: #28a745;
+  --color-warning: #ffc107;
+  --color-danger: #dc3545;
+  /*  */
+  --font-family-base: "Nunito Sans", Arial, sans-serif;
+  --font-size-base: 16px;
+
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-xxl: 1400px;
+
+  --border-radius: 8px;
+  --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
